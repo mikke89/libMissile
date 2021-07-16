@@ -73,5 +73,7 @@ public:
 	static void ParseError(const String& filename, int line_number, const char* format, ...) RMLUI_ATTRIBUTE_FORMAT_PRINTF(3, 4);
 };
 
+RMLUICORE_API bool Assert(const char* msg, const char* file, int line);
+
 } // namespace Rml
 #endif
